@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build & Run",
+            "type": "shell",
+            "command": "go build -o bin/main.exe main.go; bin/main.exe",
+        },
+        {
+            "label": "Run",
+            "type": "shell",
+            "command": "bin/main.exe",
+        },
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "go build -o bin/main.exe main.go",
+        },
+        {
+            "label": "Clean",
+            "type": "shell",
+            "command": "go clean"
+        }
+    ]
+}
